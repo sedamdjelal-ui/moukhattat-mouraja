@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SiteFooter from "./components/SiteFooter";
+import UpcomingList from "./components/UpcomingList";
 import { sections } from "./sections";
 
 export default function Home() {
@@ -53,6 +54,24 @@ export default function Home() {
                 </li>
               ))}
             </ol>
+          </div>
+        </section>
+
+        {/* قريباً: الميزات الجاية */}
+        <section className="border-t-2 border-grid">
+          <div className="mx-auto max-w-3xl px-4 md:px-6">
+            <div className="py-12 ps-6 md:ps-10">
+              <h2 className="font-display text-2xl font-bold text-text">
+                قريباً
+              </h2>
+              <UpcomingList />
+              <Link
+                href="/updates"
+                className="mt-8 inline-block text-ink underline underline-offset-4"
+              >
+                شوف كل التحديثات
+              </Link>
+            </div>
           </div>
         </section>
       </main>

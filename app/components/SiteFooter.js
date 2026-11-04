@@ -6,8 +6,18 @@ export default function SiteFooter() {
       <div className="mx-auto flex max-w-3xl flex-col gap-3 px-4 py-6 text-sm text-muted sm:flex-row sm:items-center sm:justify-between md:px-6">
         <p>
           بياناتك تبقى في جهازك.{" "}
-          <Link href="/privacy" className="text-ink underline underline-offset-4">
+          <Link
+            href="/privacy"
+            className="text-ink underline underline-offset-4"
+          >
             كيف نحمي خصوصيتك
+          </Link>
+          {" · "}
+          <Link
+            href="/updates"
+            className="text-ink underline underline-offset-4"
+          >
+            التحديثات
           </Link>
         </p>
         <p>
