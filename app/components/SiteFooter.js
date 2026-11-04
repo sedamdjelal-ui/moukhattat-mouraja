@@ -7,7 +7,7 @@ const SUGGEST_URL =
 export default function SiteFooter() {
   return (
     <footer className="border-t-2 border-grid bg-paper">
-      <div className="mx-auto max-w-3xl px-4 py-6 text-sm text-muted md:px-6">
+      <div className="mx-auto max-w-3xl py-6 pe-4 ps-10 text-sm text-muted md:pe-6 md:ps-16">
         <p className="mb-4 text-base text-text">
           عندك فكرة تعاونك في المراجعة؟{" "}
           <a
