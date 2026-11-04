@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
+/* ألوان الأداة: ورق الكراس، حبر أزرق، هامش أحمر، قلم التحديد الأصفر */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --paper: #fbfcfe;
+  --grid: #dce6f2;
+  --ink: #1d3fa8;
+  --margin: #d7263d;
+  --highlight: #ffe45c;
+  --text: #1a2233;
+  --muted: #5b6577;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-paper: var(--paper);
+  --color-grid: var(--grid);
+  --color-ink: var(--ink);
+  --color-margin: var(--margin);
+  --color-highlight: var(--highlight);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-plex);
+  --font-display: var(--font-reem);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--paper);
+  color: var(--text);
+  font-family: var(--font-plex), system-ui, sans-serif;
+}
+
+/* ورقة كراس بمربعات */
+.notebook {
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* خط الهامش الأحمر على يمين المحتوى، مثل الكراس */
+.margin-line {
+  position: relative;
+}
+.margin-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 2px;
+  background: var(--margin);
+  opacity: 0.7;
+}
+
+/* أثر قلم التحديد تحت الكلمة */
+.marker {
+  background-image: linear-gradient(
+    transparent 55%,
+    var(--highlight) 55%,
+    var(--highlight) 90%,
+    transparent 90%
+  );
+  padding-inline: 0.15em;
+}
+
+/* خط منقط بين عنوان القسم والإشارة، مثل فهرس الكراس */
+.leader {
+  flex: 1;
+  border-bottom: 2px dotted var(--grid);
+  margin-inline: 0.75rem;
+  transform: translateY(-0.35em);
+}
+
+:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
