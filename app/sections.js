@@ -11,7 +11,7 @@ export const sections = [
     href: "/schedule",
     title: "جدول المراجعة",
     description: "اختر موادك وأيامك، ونقسّملك الوقت على الأسبوع.",
-    ready: false,
+    ready: true,
   },
   {
     href: "/cards",
