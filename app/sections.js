@@ -5,7 +5,7 @@ export const sections = [
     href: "/lessons",
     title: "قائمة الدروس",
     description: "سجّل دروس كل مادة وعلّم على اللي كمّلتها، وشوف نسبة تقدّمك.",
-    ready: false,
+    ready: true,
   },
   {
     href: "/schedule",
