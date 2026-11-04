@@ -18,7 +18,7 @@ export default function SiteFooter() {
             rel="noopener noreferrer"
             className="text-ink underline underline-offset-4"
           >
-            Djellal Design Studio
+            Sedam Djellal
           </a>
         </p>
       </div>

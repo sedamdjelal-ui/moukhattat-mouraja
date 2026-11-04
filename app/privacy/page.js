@@ -52,10 +52,10 @@ export default function Privacy() {
           <p className="mt-4">
             لأي سؤال:{" "}
             <a
-              href="mailto:djellaldesignstudio@gmail.com"
+              href="mailto:sedamdjellal@gmail.com"
               className="text-ink underline underline-offset-4"
             >
-              djellaldesignstudio@gmail.com
+              sedamdjellal@gmail.com
             </a>
           </p>
         </article>
