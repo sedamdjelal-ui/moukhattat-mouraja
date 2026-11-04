@@ -24,15 +24,6 @@ export default function UpdatesPage() {
                 قريباً
               </h2>
               <UpcomingList />
-              <p className="mt-6 text-muted">
-                عندك فكرة تعاونك في المراجعة؟{" "}
-                <a
-                  href="mailto:sedamdjellal@gmail.com?subject=اقتراح لمخطط المراجعة"
-                  className="text-ink underline underline-offset-4"
-                >
-                  ابعثلنا اقتراحك
-                </a>
-              </p>
             </section>
 
             <section aria-labelledby="log" className="mt-12">
