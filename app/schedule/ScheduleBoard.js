@@ -173,7 +173,7 @@ export default function ScheduleBoard() {
           وقتك في الأسبوع
         </h2>
         <p className="mt-1 text-muted">
-          قدّاش من ساعة تقدر تراجع كل يوم؟ خلّي 0 لليوم اللي تحب ترتاح فيه.
+          قدّاش من ساعة تقدر تراجع كل يوم؟ خلّي 0 لليوم لي تحب ترتاح فيه.
         </p>
         <ul className="mt-4 divide-y divide-grid rounded-lg border-2 border-grid bg-white">
           {DAYS.map((d) => (

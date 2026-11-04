@@ -17,7 +17,7 @@ export default function LessonsPage() {
               قائمة الدروس
             </h1>
             <p className="mt-3 text-lg">
-              سجّل دروس كل مادة، وعلّم على اللي كمّلت مراجعتها.
+              سجّل دروس كل مادة، وعلّم على لي كمّلت مراجعتها.
             </p>
             <LessonsBoard />
           </div>

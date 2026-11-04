@@ -43,7 +43,7 @@ function shareUnits(subjects, totalUnits) {
 }
 
 // يرجع لكل يوم قائمة حصص: [{ subjectId, minutes }]
-// المادة اللي باقيلها وقت أكثر تجي أولاً، وما نعاودوش نفس المادة مرتين ورا بعض
+// المادة لي باقيلها وقت أكثر تجي أولاً، وما نعاودوش نفس المادة مرتين ورا بعض
 // في نفس اليوم إلا إذا ما كانش حل آخر. الحصص المتتالية لنفس المادة تتجمع.
 export function buildPlan(subjects, hours) {
   const plan = Object.fromEntries(DAYS.map((d) => [d.key, []]));
@@ -70,7 +70,7 @@ export function buildPlan(subjects, hours) {
         .filter((s) => remaining[s.id] > 0)
         .sort(
           (a, b) =>
-            // نفضّل مادة ما راجعناهاش اليوم، ومن بعد اللي باقيلها أكثر
+            // نفضّل مادة ما راجعناهاش اليوم، ومن بعد لي باقيلها أكثر
             Number(usedToday.has(a.id)) - Number(usedToday.has(b.id)) ||
             remaining[b.id] - remaining[a.id] ||
             order[a.id] - order[b.id],
