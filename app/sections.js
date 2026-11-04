@@ -17,6 +17,6 @@ export const sections = [
     href: "/cards",
     title: "بطاقات الحفظ",
     description: "اكتب سؤال وجوابه، وراجعهم بالتكرار قبل الامتحان.",
-    ready: false,
+    ready: true,
   },
 ];
